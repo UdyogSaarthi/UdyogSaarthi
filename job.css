@@ -1,0 +1,391 @@
+/* Second nav of JOB page */
+body{
+    overflow-x: hidden;
+}
+nav{
+    height: 5rem;
+    width: 100vw;
+}
+.nav-items{
+    height: 100%;
+    width: 100%;
+    background-color: #bcd8ef;
+}
+.nav-items .form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.search-1,.search-2,.search-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1rem;
+    background-color: #fff;
+    height: 60%;
+    width: 15%;
+    border-radius: 7px;
+    cursor: text;
+}
+.search-1 i, .search-2 i, .search-3 i{
+    margin: 0 20px 0 15px;
+}
+.search-1 input, .search-2 input, .search-3 input{
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    font-size: 15px;
+}
+input::placeholder { 
+    color: #999; 
+    font-style: italic;
+    font-size: 16px;
+  }
+
+#button{
+    height: 60%;
+    width: 8%;
+    border-radius: 9px;
+    border: none;
+    background-color: #1d2d5a;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 9px 6px 7px;
+    outline: none;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: #160b2a;
+}
+
+/* Job List */
+
+.jobs{
+    height: 355vh;
+    width: 100vw;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.job:hover{
+    background-color: #e1ebf4;
+}
+.company-logo{
+    background-color: #fff7f7;
+    height: 75%;
+    width: 10%;
+    margin: 0 1rem;
+}
+.company-name{
+    /* background-color: #fff7f7; */
+    height: 75%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.company-name span:nth-of-type(1){
+    font-size: 1.4rem;
+}
+.company-name span:nth-of-type(2), .company-name span:nth-of-type(3){
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    font-family: Nunito Sans,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,helvetica,arial,Lucida Grande,sans-serif;
+}
+.two-btns{
+    display: flex;
+    width: 40%;
+    height: 75%;
+}
+.apply{
+    font-family: Nunito Sans,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,helvetica,arial,Lucida Grande,sans-serif;
+    height: 55%;
+    width: 45%;
+    background-color: #ebf8fd;
+    margin: 0 1rem 0 2rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    color: #53565f;
+    text-transform: uppercase;
+    padding: 15px 14px;
+    box-sizing: border-box;
+    align-self: center;
+}
+.apply:hover{
+    background-color: #9adbf5;
+}
+.view-job{
+    font-family: Nunito Sans,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,helvetica,arial,Lucida Grande,sans-serif;
+    height: 50%;
+    width: 45%;
+    background-color: none;
+    margin: 0 1rem 0 2rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 18px;
+    border: 1px solid #1d2d5a;
+    color: #1d2d5a;
+    text-transform: uppercase;
+    padding: 20px 14px;
+    box-sizing: border-box;
+    align-self: center;
+}
+.view-job:hover{
+    background-color: #1d2d5a;
+    border: none;
+    color: white;
+}
+
+/**************************** Responsive *********************************/
+@media (max-width: 480px){
+    nav{
+        height: 18rem;
+        width: 90vw;
+    }
+    .nav-items{
+        padding: 2rem;
+        height: 80%;
+        width: 100%;
+    }
+    .nav-items .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-1,.search-2,.search-3{
+        height: 100%;
+        width: 100%;
+        margin: 0.4rem 0.6rem;
+    }
+    #button{
+        height: 100%;
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    .company-logo{
+        display: none;
+    }
+    .company-name{
+        margin-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .job{
+        padding: 1rem 0 0 0;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .two-btns{
+        width: 100%;
+        height: 50%;
+        margin: 1rem 0;
+    }
+    .apply{
+        height: 85%;
+        width: 50%;
+    }
+    .view-job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .search-1,.search-2,.search-3{
+        height: 60%;
+        width: 25%;
+        margin: 0 0.5rem;
+    }
+    #button{
+        height: 60%;
+        width: 10%;
+    }
+    .company-logo{
+        display: none;
+    }
+    .company-name{
+        margin-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .job{
+        padding: 1rem 0 0 0;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .two-btns{
+        width: 100%;
+        height: 50%;
+        margin: 1rem 0;
+    }
+    .apply{
+        height: 85%;
+        width: 50%;
+    }
+    .view-job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 50%;
+    }
+}
+@media (min-width : 481px) and (max-width : 767px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        height: 18rem;
+        width: 90vw;
+    }
+    .nav-items{
+        padding: 2rem;
+        height: 80%;
+        width: 100%;
+    }
+    .nav-items .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-1,.search-2,.search-3{
+        height: 100%;
+        width: 100%;
+        margin: 0.4rem 0.6rem;
+    }
+    #button{
+        height: 100%;
+        width: 100%;
+        margin: 0.4rem 0;
+    }
+    .company-logo{
+        display: none;
+    }
+    .company-name{
+        margin-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .job{
+        padding: 1rem 0 0 0;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .two-btns{
+        width: 100%;
+        height: 50%;
+        margin: 1rem 0;
+    }
+    .apply{
+        height: 85%;
+        width: 50%;
+    }
+    .view-job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 50%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    nav{
+        height: 5rem;
+        width: 100vw;
+    }
+    .nav-items{
+        height: 100%;
+        width: 100%;
+    }
+    .search-1,.search-2,.search-3{
+        height: 60%;
+        width: 20%;
+        margin: 0 1rem;
+    }
+    #button{
+        height: 60%;
+        width: 10%;
+    }
+    .company-logo{
+        display: none;
+    }
+    .company-name{
+        margin-left: 2rem;
+        line-height: 1.5rem;
+    }
+    .job{
+        padding: 1rem 0 0 0;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .two-btns{
+        width: 100%;
+        height: 50%;
+        margin: 1rem 0;
+    }
+    .apply{
+        height: 85%;
+        width: 50%;
+    }
+    .view-job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1919px){
+    
+}
+@media (min-width: 1920px){
+
+}
